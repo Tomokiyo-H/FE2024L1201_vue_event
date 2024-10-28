@@ -8,7 +8,17 @@
 </head>
 <body>
     
+    <div id="app">
+        <button @click="increment">2倍</button>
+        <button @click="decrement">1/2</button>
+        <button @click="reset">リセット</button><br>
+        <input v-model.number="num" type="text">
+        <button @click="add">追加</button>
+        <button @click="decrease">減少</button>
+        <p>{{count}}</p>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script src="./script/script.js"></script>
+
 </body>
 </html>
